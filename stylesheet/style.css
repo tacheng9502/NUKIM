@@ -1,0 +1,186 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family:"微軟正黑體";
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	background: url('../images/body_bg.gif');
+}
+.clear{
+	clear: both;
+}
+.wrap{
+	width: 984px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.header{
+	overflow: hidden;
+	margin-top: 50px;
+}
+.header h1{
+	float: left;
+	margin-bottom: 30px;
+}
+.header h1 a{
+	display: block;
+	width: 441px;
+	height: 67px;
+	text-indent: -99999px;
+	background: url('../images/logo.png');
+}
+ul.menu{
+	float: left;
+	margin-left: 5px;
+	margin-bottom: 30px;
+}
+ul.menu li{
+	display: block;
+	padding-left: 35px;
+	margin-right: 15px;
+	float: left;
+	font-size: 18px;
+	background: url('../images/menu_boder.png') left no-repeat;
+}
+ul.menu li a{
+	display: block;
+	color: #000;
+	text-decoration: none;
+	padding-bottom: 5px;
+}
+ul.menu li a:hover{
+	color: #EB2632;
+	border-bottom: 1.5px solid;
+	border-color: #EB2632;
+	padding-bottom: 3.5px;
+}
+ul.social_nav{
+	display: block;
+	float: right;
+}
+ul.social_nav li{
+	float: left;
+}
+
+.content{
+	overflow: hidden;
+
+}
+
+.slider{
+	overflow: hidden;
+	margin-bottom: 30px;
+	width: 984px;
+	height: 300px;
+	border-radius: 3px;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+.event{
+	overflow: hidden;
+	padding-top: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 30px;
+	background: #fff;
+	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+   	margin-bottom: 50px;
+}
+.event h2{
+	font-size: 20px;
+	padding-left: 30px;
+	margin-bottom: 20px;
+	background: url('../images/event_boder.png') left no-repeat;
+}
+
+.event ul{
+	padding-top: 25px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	margin-bottom: 30px;
+	background: #fff;
+	border-radius: 2px;
+	box-shadow: inset 0 0 1px 1px #e3e3e3;
+}
+.event li{
+	margin-bottom: 10px;
+}
+.event p{
+	float: left;
+	margin-right: 20px;
+	font-size: 12px;
+}
+.event a{
+	color: #000;
+	text-decoration: none;
+}
+.event a:hover{
+	color: #EB2632;
+}
+
+
+.event_left{
+	float: left;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	width: 45%;
+}
+.event_right{
+	float: left;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	width: 45%;
+}
+
+.footer{
+	height: 100px;
+	background: #4B4848;
+	border-radius: 3px;
+}
