@@ -87,6 +87,9 @@ ul.menu li{
 	font-size: 18px;
 	background: url('../images/menu_boder.png') left no-repeat;
 }
+ul.menu li:first-child{
+	background: none;
+}
 ul.menu li a{
 	display: block;
 	color: #000;
@@ -94,9 +97,9 @@ ul.menu li a{
 	padding-bottom: 5px;
 }
 ul.menu li a:hover{
-	color: #EB2632;
+	color: #7899DC;
 	border-bottom: 1.5px solid;
-	border-color: #EB2632;
+	border-color: #7899DC;
 	padding-bottom: 3.5px;
 }
 ul.social_nav{
@@ -162,7 +165,7 @@ ul.social_nav li{
 	text-decoration: none;
 }
 .event a:hover{
-	color: #EB2632;
+	color: #7899DC;
 }
 
 
