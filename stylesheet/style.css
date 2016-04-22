@@ -61,7 +61,7 @@ body{
 }
 .header{
 	overflow: hidden;
-	margin-top: 50px;
+	padding-top: 50px;
 }
 .header h1{
 	float: left;
@@ -76,7 +76,8 @@ body{
 }
 ul.menu{
 	float: left;
-	margin-left: 5px;
+	margin-left: auto;
+	margin-right: auto;
 	margin-bottom: 30px;
 }
 ul.menu li{
@@ -89,6 +90,7 @@ ul.menu li{
 }
 ul.menu li:first-child{
 	background: none;
+	padding-left: 30px;
 }
 ul.menu li a{
 	display: block;
@@ -97,9 +99,9 @@ ul.menu li a{
 	padding-bottom: 5px;
 }
 ul.menu li a:hover{
-	color: #7899DC;
+	color: #033E98;
 	border-bottom: 1.5px solid;
-	border-color: #7899DC;
+	border-color: #033E98;
 	padding-bottom: 3.5px;
 }
 ul.social_nav{
@@ -165,7 +167,7 @@ ul.social_nav li{
 	text-decoration: none;
 }
 .event a:hover{
-	color: #7899DC;
+	color: #033E98;
 }
 
 
