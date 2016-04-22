@@ -86,8 +86,9 @@ ul.menu li{
 	margin-right: 15px;
 	float: left;
 	font-size: 18px;
-	background: url('../images/menu_boder.png') left no-repeat;
+	background: url('../images/menu_border.png') left no-repeat;
 }
+
 ul.menu li:first-child{
 	background: none;
 	padding-left: 30px;
@@ -139,9 +140,11 @@ ul.social_nav li{
 }
 .event h2{
 	font-size: 20px;
-	padding-left: 30px;
-	margin-bottom: 20px;
-	background: url('../images/event_boder.png') left no-repeat;
+	padding-left: 40px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	margin-bottom: 15px;
+	background: url('../images/event_border.svg') left no-repeat;
 }
 
 .event ul{
