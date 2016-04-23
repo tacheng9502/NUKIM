@@ -81,6 +81,7 @@ ul.menu{
 	margin-bottom: 30px;
 }
 ul.menu li{
+	position: relative;
 	display: block;
 	padding-left: 35px;
 	margin-right: 15px;
@@ -105,6 +106,21 @@ ul.menu li a:hover{
 	border-color: #033E98;
 	padding-bottom: 3.5px;
 }
+
+ul.menu li ul {
+    background-color: rgba(231, 124, 64, 1);
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+
+ul.menu li:hover ul {
+    display: block;
+    right: 0;
+    left: 0;
+    top: 100%;
+    z-index: 1;
+}
 ul.social_nav{
 	display: block;
 	float: right;
@@ -125,6 +141,7 @@ ul.social_nav li{
 	height: 300px;
 	border-radius: 3px;
 	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
+	z-index: 0;
 }
 
 .event{
