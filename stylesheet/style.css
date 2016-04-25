@@ -54,6 +54,9 @@ body{
 .clear{
 	clear: both;
 }
+img{
+	max-width: 100%;
+}
 .wrap{
 	max-width: 984px;
 	width: 100%;
