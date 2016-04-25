@@ -63,6 +63,8 @@ img{
 	margin: 0 auto;
 }
 .header{
+	max-wdith: 984px;
+	width: 100%;
 	padding-top: 50px;
 }
 .header h1{
