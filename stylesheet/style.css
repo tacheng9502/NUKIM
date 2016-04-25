@@ -54,12 +54,17 @@ body{
 .clear{
 	clear: both;
 }
+img{
+	max-width: 100%;
+}
 .wrap{
-	width: 984px;
-	margin-left: auto;
-	margin-right: auto;
+	max-width: 984px;
+	width: 100%;
+	margin: 0 auto;
 }
 .header{
+	max-wdith: 984px;
+	width: 100%;
 	padding-top: 50px;
 }
 .header h1{
@@ -139,8 +144,10 @@ ul.social_nav li{
 .slider{
 	overflow: hidden;
 	margin-bottom: 30px;
-	width: 984px;
-	height: 300px;
+	max-width: 984px;
+	width: 100%;
+	max-height: 300px;
+	height: 33%;
 	border-radius: 3px;
 	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
 	z-index: 0;
@@ -148,16 +155,30 @@ ul.social_nav li{
 
 .content{
 	overflow: hidden;
-	padding-top: 50px;
-	padding-left: 50px;
-	padding-right: 50px;
-	padding-bottom: 30px;
+	padding: 50px 50px 30px;
 	background: #fff;
 	box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.1);
     border-radius: 3px;
    	margin-bottom: 50px;
 }
+<<<<<<< HEAD
 .content h2{
+=======
+
+@media screen and (max-width:768px){
+	.event{
+		padding: 30px 30px 10px;
+	}
+}
+
+@media screen and (max-width:320px){
+	.event{
+		padding: 20px 20px 5px;
+	}
+}
+
+.event h2{
+>>>>>>> origin/gh-pages
 	font-size: 20px;
 	padding-left: 40px;
 	padding-top: 5px;
@@ -166,11 +187,16 @@ ul.social_nav li{
 	background: url('../images/event_border.svg') left no-repeat;
 }
 
+<<<<<<< HEAD
 .content ul{
 	padding-top: 25px;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 15px;
+=======
+.event ul{
+	padding: 25px 20px 15px 20px;
+>>>>>>> origin/gh-pages
 	margin-bottom: 30px;
 	background: #fff;
 	border-radius: 2px;
@@ -192,18 +218,36 @@ ul.social_nav li{
 	color: #033E98;
 }
 
+<<<<<<< HEAD
 
 .content_left{
+=======
+.event_left{
+>>>>>>> origin/gh-pages
 	float: left;
-	margin-right: 2.5%;
-	margin-left: 2.5%;
+	margin: 0 2.5%;
 	width: 45%;
 }
 .content_right{
 	float: left;
-	margin-right: 2.5%;
-	margin-left: 2.5%;
+	margin: 0 2.5%;
 	width: 45%;
+}
+
+@media screen and (max-width:768px){
+	.event_left, .event_right{
+		width: 95%;
+		margin: 0 2.5%;
+		float: none;
+	}
+}
+
+@media screen and (max-width:320px){
+	.event_left, .event_right{
+		width: 98%;
+		margin: 0 1%;
+		float: none;
+	}
 }
 
 .footer{
