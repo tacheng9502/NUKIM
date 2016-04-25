@@ -114,10 +114,8 @@ ul.menu>li>a:hover{
 ul.menu li ul {
     background: #4B4848;
 	border-radius: 3px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 10px;
+    padding: 10px;
+	white-space: nowrap;
     display: none;
     position: absolute;
     left: 25%;
