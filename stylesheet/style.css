@@ -84,7 +84,7 @@ ul.menu{
 	margin-right: auto;
 	margin-bottom: 30px;
 }
-ul.menu li{
+ul.menu>li{
 	position: relative;
 	display: block;
 	padding-left: 35px;
@@ -94,17 +94,17 @@ ul.menu li{
 	background: url('../images/menu_border.png') left no-repeat;
 }
 
-ul.menu li:first-child{
+ul.menu>li:first-child{
 	background: none;
 	padding-left: 30px;
 }
-ul.menu li a{
+ul.menu>li>a{
 	display: block;
 	color: #000;
 	text-decoration: none;
 	padding-bottom: 5px;
 }
-ul.menu li a:hover{
+ul.menu>li>a:hover{
 	color: #033E98;
 	border-bottom: 1.5px solid;
 	border-color: #033E98;
@@ -112,27 +112,33 @@ ul.menu li a:hover{
 }
 
 ul.menu li ul {
-    background-color: rgba(231, 124, 64, 1);
+    background: #4B4848;
+	border-radius: 3px;
     padding-top: 10px;
     padding-left: 10px;
     padding-right: 10px;
     padding-bottom: 10px;
     display: none;
     position: absolute;
-    top: 95%;
+    left: 25%;
+    top: 100%;
 }
 
 ul.menu li ul li{
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
+ul.menu li ul li a{
+	color: #fff;
+	text-decoration: none;
 }
 
 ul.menu li:hover ul {
     display: block;
-    right: 0;
-    left: 0;
-    top: 5;
     z-index: 1;
 }
+
 ul.social_nav{
 	display: block;
 	float: right;
