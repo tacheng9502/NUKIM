@@ -305,4 +305,9 @@ ul.social_nav li{
 	height: 100px;
 	background: #4B4848;
 	border-radius: 3px;
+	padding: 5px;
+	color: #aaa;
+	text-align: center;
+	font-size: .9rem;
+	line-height: 1.2rem;
 }
