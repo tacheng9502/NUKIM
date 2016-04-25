@@ -60,7 +60,6 @@ body{
 	margin-right: auto;
 }
 .header{
-	overflow: hidden;
 	padding-top: 50px;
 }
 .header h1{
@@ -109,16 +108,24 @@ ul.menu li a:hover{
 
 ul.menu li ul {
     background-color: rgba(231, 124, 64, 1);
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
     display: none;
     position: absolute;
-    top: 100%;
+    top: 95%;
+}
+
+ul.menu li ul li{
+
 }
 
 ul.menu li:hover ul {
     display: block;
     right: 0;
     left: 0;
-    top: 100%;
+    top: 5;
     z-index: 1;
 }
 ul.social_nav{
@@ -131,7 +138,6 @@ ul.social_nav li{
 
 .content{
 	overflow: hidden;
-
 }
 
 .slider{
