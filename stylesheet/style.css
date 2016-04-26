@@ -202,10 +202,12 @@ ul.social_nav li{
 }
 .event li{
 	margin-bottom: 10px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
 }
 .event p{
 	float: left;
-	margin-right: 20px;
 	font-size: 12px;
 }
 .event a{
