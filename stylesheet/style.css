@@ -311,7 +311,8 @@ ul.social_nav li{
 
 .footer{
 	background: #4B4848;
-	border-radius: 3px;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
 	padding: 20px;
 	color: #aaa;
 	text-align: center;
