@@ -382,7 +382,7 @@ ul.social_nav li{
     color:white;
 }
 .choose_c input[type="checkbox"]:checked + label {
-    background-color: #00ADB5;
+    background-color: #59B0BA;
     color:white;
     box-shadow:1px 2px 2px 2px #006F94 inset;
 }
@@ -430,9 +430,9 @@ ul.social_nav li{
     color:white;
 }
 .choose_t input[type="checkbox"]:checked + label {
-    background-color: #88AA00;
+    background-color: #053D85;
     color:white;
-    box-shadow:1px 2px 2px 2px #688200 inset;
+    box-shadow:1px 2px 2px 2px #002269 inset;
 }
 /*content*/
 .class_content ul{
