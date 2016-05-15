@@ -522,9 +522,9 @@ ul.social_nav li{
     color:white;
 }
 .choose_t input[type="checkbox"]:checked + label {
-    background-color: #88AA00;
+    background-color: #1972A4;
     color:white;
-    box-shadow:1px 2px 2px 2px #688200 inset;
+    box-shadow:1px 2px 2px 2px #1156A4 inset;
 }
 /*content*/
 .class_content ul{
