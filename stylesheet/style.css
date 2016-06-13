@@ -556,6 +556,10 @@ ul.social_nav li{
 }
 /*top is added*/
 
+.blue {
+	color: #0068c3;
+}
+
 @media screen and (max-width:768px){
 	.event_left, .event_right{
 		width: 95%;
