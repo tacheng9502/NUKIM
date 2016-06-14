@@ -6,8 +6,8 @@
 			$categories = get_categories(array('child_of'=>16));
 			foreach($categories as $category){?>
 				<li>
-					<input type="checkbox" id="cat_<?php echo $category->slug?>" name="class">
-					<label for="cat_<?php echo $category->slug?>"><?php echo $category->name?></label>
+					<input type="checkbox" id="cat_<?php echo $category->term_id?>" class="filter" name="class">
+					<label for="cat_<?php echo $category->term_id?>"><?php echo $category->name?></label>
 				</li>
 			<?php }	?>
         </ul>           
@@ -16,8 +16,8 @@
 			$tags = get_tags();
 			foreach($tags as $tag){?>
 				<li>
-					<input type="checkbox" id="cat_<?php echo $tag->slug?>" name="class">
-					<label for="cat_<?php echo $tag->slug?>"><?php echo $tag->name?></label>
+					<input type="checkbox" id="tag_<?php echo $tag->term_id?>" class="filter" name="class">
+					<label for="tag_<?php echo $tag->term_id?>"><?php echo $tag->name?></label>
 				</li>
 			<?php }	?>
         </ul> 
@@ -33,7 +33,7 @@
 				$str_category = '';
 				foreach($categories as $category){
 					$i++;
-					$str_category .= $category->name;
+					$str_category .= $category->term_id;
 					if($i != count($categories)) $str_category .= ',';
 				}
 				
@@ -42,13 +42,14 @@
 				$str_tag = '';
 				foreach($tags as $tag){
 					$i++;
-					$str_tags .= $tag->name;
+					$str_tags .= $tag->term_id;
 					if($i != count($tags)) $str_tag .= ',';
 				}
 			?>
-				<li data-catgory="<?php echo $str_category?>" data-tag="<?php echo $str_tag?>"><p><?php the_time('y/m/d')?></p><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+				<li data-category="[<?php echo $str_category?>]" data-tag="[<?php echo $str_tag?>]"><p><?php the_time('y/m/d')?></p><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
 			<?php endwhile ?>
 			</ul>
 		</div>
     </div>
+	<script>var currentPage = 'archive';</script>
 <?php get_footer();?>

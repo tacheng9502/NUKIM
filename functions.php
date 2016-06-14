@@ -16,8 +16,12 @@ function breadcrumb_init($nickname = ''){
 			<span itemprop="title"><?php bloginfo('name');?></span></a> 
 	</li>
 	<?php
+	if ( is_page() ){
+		echo '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">' . the_title() . '</li>';
+	}
 	if( is_single() ){
-		foreach ((get_the_category()) as $category) {
+		$categories = array_reverse(get_the_category());
+		foreach ($categories as $category) {
 			echo '<li itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
 			echo '<span class="divider">&gt;</span> <a href="' . get_category_link($category -> term_id) . '" itemprop="url" title=' . $category -> cat_name . '> <span itemprop="title">' . $category -> cat_name . '</span> </a>';
 			echo '</li>';

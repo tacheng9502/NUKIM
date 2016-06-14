@@ -8,6 +8,8 @@
 	<link href="images/favicon.ico" rel="shortcut icon" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url')?>" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="<?php echo get_template_directory_uri() ?>/all.js"></script>
+	<link href="//netdna.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css" rel="stylesheet">
 	<?php wp_head();?>
 </head>
 <body>

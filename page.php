@@ -3,8 +3,9 @@
     <div class="content">
         <?php breadcrumb_init(); ?>
         <h2><?php the_title();?></h2>
-        <span class="date"><?php the_time('y/m/d')?></span>
+        <div class="post_content">
         <?php the_content();?>
+		</div>
     </div>
 	<?php endwhile ?>
 <?php get_footer();?>

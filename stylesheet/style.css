@@ -1,55 +1,8 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-	font-family:"微軟正黑體";
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}body{margin:0;line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none;}table{border-collapse:collapse;border-spacing:0;}*{-webkit-margin-before:0;-webkit-margin-after:0;-webkit-margin-start:0;-webkit-margin-end:0;margin:0;}
 
 body{
 	background: url('../images/body_bg.gif');
+	font-family: '微軟正黑體';
 }
 .clear{
 	clear: both;
@@ -132,6 +85,7 @@ ul.menu li ul li a{
 	color: #fff;
 	text-decoration: none;
 	font-size: 15px;
+	display: block;
 }
 
 ul.menu li ul li a:hover{
@@ -250,10 +204,38 @@ ul.social_nav li{
 	font-weight: bold;
 }
 
+.content h3{
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 40px;
+}
+
 .content p {
 	font-size: 16px;
+	margin-left: 16px;
 	line-height: 35px;
 	letter-spacing: 1px;
+}
+
+.content a{
+	color: #10adfb;
+	text-decoration: none;
+}
+
+.content a:hover{
+	text-decoration: underline;
+}
+
+.content .post_content ul{
+	margin-left: 32px;
+	line-height: 35px;
+	list-style-type: circle;
+}
+
+.content .post)content ol{
+	margin-left: 32px;
+	line-height: 25px;
+	list-style-type: decimal;
 }
 
 .date {
@@ -264,24 +246,6 @@ ul.social_nav li{
 	color: #737171;
 }
 /**/
-.choose{
-	overflow: hidden;
-	padding: 10px;
-	background: #fff;
-	box-shadow: inset 0 0 1px 1px #e3e3e3;
-    border-radius: 3px;
-   	margin-bottom: 15px;
-   	position: relative;
-}
-.choose_c {
-	line-height: 16px;
-	font-size: 16px;
-	color: #737171;
-	letter-spacing: 1px;
-	margin:10px 0px 15px 135px;
-	padding:10px 10px 10px 10px;
-	overflow: hidden;
-}
 
 .breadcrumb {
  	font-size: 13px;
@@ -310,11 +274,17 @@ ul.social_nav li{
  	color: #5BC1CF;
 }
 
-.profile {
-	width: 18.5%;
-	margin: 30px;
-	float: left;
+.profile{
+	margin-left: 0;
 }
+
+.profile li{
+	width: 18.5%;
+	margin: 28px;
+	display: inline-block;
+	vertical-align: top;
+}
+
 
 .profile h3 {
 	font-size: 18px;
@@ -322,16 +292,19 @@ ul.social_nav li{
 
 }
 
-.profile span {
-	font-weight: 700;
-	font-size: 10px;
+.profile p{
+	margin-left: 0;
+	letter-spacing: 0;
 }
 
 .photo {
 	box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+	max-width: 171;
+	height: auto;
 }
 
 /**/
+
 .choose{
 	overflow: hidden;
 	padding: 10px;
@@ -581,4 +554,66 @@ ul.social_nav li{
 	text-align: center;
 	font-size: 14px;
 	line-height: 25px;
+}
+
+.social_like_wrapper {
+    border: 1px solid red;
+    color: #fff;
+    font-size: 1.5em;
+    display: inline-block;
+    text-align: center;
+    min-width: 40px;
+}
+.social_like_ww {
+    position: relative;
+    margin: 0 0.5em;
+	display: block;
+	margin-top: 2rem;
+}
+.social_like {
+    #font-size: 2.5em;
+    color: #fff;
+    margin: 5px;
+}
+.social_like_fb {
+    background-color: #45619d;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    left: 0;
+    top: -25px;
+}
+.social_like_gp {
+    background-color: #dd4c39;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    left: 42px;
+    top: -25px;
+}
+.social_like_tw {
+    background-color: #09b0ee;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 0;
+    left: 84px;
+    top: -25px;
+}
+.social_like_lnk {
+    border-color: orange;
+    float: right;
+    font-size: 1em;
+    padding: .8em;
+    color: orange;
+    margin-top: .8em;
+}
+.social_like_lnk_lnk {
+    color: #000;
+    text-decoration: none;
 }
