@@ -312,8 +312,8 @@ ul.social_nav li{
 
 .profile {
 	width: 18.5%;
-	margin: 30px;
-	float: left;
+	margin: 28px;
+	display: inline-block;
 }
 
 .profile h3 {
